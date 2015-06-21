@@ -1,0 +1,40 @@
+body {
+    padding: 65px 0px 0px 0px;
+}
+
+.tabs,
+.tabs li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.tabs {
+    float: left;
+    width: 100%;
+}
+
+ul.tabs li {
+    width: 50%;
+    float: left;
+    font-family: Arial;
+    background-color: #337ab5;
+    color: #fff;
+    padding: 2%;
+    text-align: center;
+}
+
+ul.tabs li.current {
+    background-color: #0c5796;
+    color: #fff;
+}
+
+.topo-app {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0px;
+    background-color: #337ab5;
+    color: #fff;
+    border-bottom: 2px solid #184c77; 
+}

@@ -1,0 +1,36 @@
+<div class="col-xs-12">
+    <div class="scrollable-content">
+       
+        <div class="list-grounp" ng-repeat="lst in lista" ng-if="RespostaSim">
+            <a href="#" class="list-group-item" ng-click="goCandidato(lst.Id)">
+
+                <div class="media-left" style="width:60px;">
+                    <div class="img-circle">
+                        <img src="{{lst.Foto}}" alt="{{lst.NomeCompleto}}" class="img-circle" width="50" height="50">
+                    </div>
+                </div>
+
+                <div class="media-right">
+                    <strong class="text-primary">{{lst.NomeCompleto}}</strong>
+                    <BR> {{lst.Cargo}} / {{lst.PartidoSigla}}
+                </div>
+            </a>            
+        </div>
+
+        <div class="list-grounp" ng-if="RespostaNao">
+            <div class="media-right" ng-if="RespostaNao">
+                <strong class="text-primary">Não foram encontrados dados</strong>
+            </div>
+        </div>
+        
+        <div class="list-grounp" ng-if="RespostaAguarde">
+            <div class="media-right" ng-if="RespostaAguarde">
+                <strong class="text-primary">
+                   <br><br><br>
+                    <img src="Img/loader.gif" title="Aguarde" alt="Aguarde">
+                </strong>
+            </div>
+        </div>
+        
+    </div>
+</div>
